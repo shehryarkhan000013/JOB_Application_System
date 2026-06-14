@@ -92,7 +92,7 @@ def main() -> None:
             )
             total_discovered += count
 
-    print(f"\n  → Discovery complete. {total_discovered} new leads added.")
+    print(f"\n  -> Discovery complete. {total_discovered} new leads added.")
 
     # ── Phase 3: Scraping ───────────────────────────────────────────────────
     print("\nPhase 2 │ Deep Scraping (Playwright)")
@@ -101,7 +101,7 @@ def main() -> None:
     # ── Phase 4: Email Drafting ─────────────────────────────────────────────
     print("\nPhase 3 │ Drafting Emails")
     draft_count = email_drafter.draft_emails()
-    print(f"  → {draft_count} drafts written to applications.json")
+    print(f"  -> {draft_count} drafts written to applications.json")
 
     # ── Phase 5: Summary & Report ───────────────────────────────────────────
     print_pipeline_summary()

@@ -92,16 +92,16 @@ def scrape_website_for_email(url: str, page: Page) -> Optional[str]:
         else:
             target_url = target_href
 
-        print(f"    → Following: {target_url}")
+        print(f"    -> Following: {target_url}")
         time.sleep(random.uniform(1.0, 2.0))
         page.goto(target_url, timeout=30_000, wait_until='domcontentloaded')
         emails = extract_emails_from_html(page.content())
         return emails[0] if emails else None
 
     except PlaywrightTimeoutError:
-        print(f"    → Timeout: {url}")
+        print(f"    -> Timeout: {url}")
     except Exception as e:
-        print(f"    → Error on {url}: {e}")
+        print(f"    -> Error on {url}: {e}")
 
     return None
 
@@ -146,7 +146,7 @@ def run_scraper(retry_count: int = 2) -> None:
                 if email:
                     break
                 if attempt < retry_count - 1:
-                    print(f"    → Retry {attempt + 2} for {url}")
+                    print(f"    -> Retry {attempt + 2} for {url}")
                     time.sleep(2.0)
 
             if email:

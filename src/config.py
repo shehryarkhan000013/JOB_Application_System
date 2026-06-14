@@ -24,7 +24,7 @@ def _require(key: str) -> str:
     if not value:
         raise ValueError(
             f"\n[CONFIG ERROR] Required environment variable '{key}' is not set.\n"
-            f"  → Copy .env.example to .env and fill in all required values.\n"
+            f"  -> Copy .env.example to .env and fill in all required values.\n"
         )
     return value
 

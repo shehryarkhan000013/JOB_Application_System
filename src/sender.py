@@ -53,7 +53,7 @@ def send_emails() -> None:
     if not os.path.exists(cv_path):
         print(
             f"[ERROR] CV file '{config.CV_FILENAME}' not found in project root.\n"
-            f"  → Ensure CV_FILENAME in your .env matches the actual filename."
+            f"  -> Ensure CV_FILENAME in your .env matches the actual filename."
         )
         return
 
@@ -86,7 +86,7 @@ def send_emails() -> None:
             subject: str = app['subject']
             body: str = app['body']
 
-            print(f"[{index}/{len(applications)}] → {business_name} ({recipient_email})")
+            print(f"[{index}/{len(applications)}] -> {business_name} ({recipient_email})")
 
             # --- Deduplication check ---
             if recipient_email in backup_contacted:

@@ -176,7 +176,7 @@ def draft_emails() -> int:
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(json_output, f, indent=4, ensure_ascii=False)
 
-    print(f"Generated {drafts_created} email drafts → applications.json")
+    print(f"Generated {drafts_created} email drafts -> applications.json")
     return drafts_created
 
 
