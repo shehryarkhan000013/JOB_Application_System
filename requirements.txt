@@ -1,0 +1,11 @@
+# Auto-Bewerbung System — Python Dependencies
+# Install with: pip install -r requirements.txt
+# Playwright browsers: playwright install chromium
+
+googlemaps>=4.10.0
+playwright>=1.43.0
+beautifulsoup4>=4.12.3
+pandas>=2.2.2
+python-dotenv>=1.0.1
+xlsxwriter>=3.2.0
+lxml>=5.2.1

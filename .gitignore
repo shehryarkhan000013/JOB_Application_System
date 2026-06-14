@@ -1,0 +1,40 @@
+# ==============================================================================
+# Auto-Bewerbung System — .gitignore
+# ==============================================================================
+
+# --- Secrets & Environment ---
+.env
+*.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.venv/
+venv/
+env/
+.Python
+*.egg-info/
+dist/
+build/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Runtime Data & Artifacts (contain personal/scraped data) ---
+leads.db
+applications.json
+backup_contacted.txt
+
+# --- Personal Files (CV, reports) ---
+*.pdf
+*.xlsx
+*.xls
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
